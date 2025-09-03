@@ -8,7 +8,7 @@ const Backtotop = ({TopRef}) => {
   TopRef.current.scrollIntoView({behavior: "smooth" })
  }
   return (
-    <div className='bg-purple-900 text-center h-[30px] w-full  text-white cursor-pointer text-[20px] font-bold '  onClick={scrolltoTop}>Back to Top</div>
+    <div className='bg-purple-900 text-center h-[20px] w-full  text-white cursor-pointer text-[15px] font-bold '  onClick={scrolltoTop}>Back to Top</div>
   )
 }
 

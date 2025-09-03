@@ -5,7 +5,7 @@ import Comeupword from './Comeupword'
 
 const About = ({ aboutRef }) => {
   return (
-    <div className="text-center m-5 p-10" ref={aboutRef}>
+    <div className="text-center m-5 lg:p-10 md:gap-10 gap-0" ref={aboutRef}>
       
 
       <div className="lg:flex md:flex grid justify-between items-center gap-[120px]  ">

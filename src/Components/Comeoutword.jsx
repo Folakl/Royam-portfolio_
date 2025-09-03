@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 
-const ComeOutWord = ({children, delay = 0, duration = 2}) => {
+const ComeOutWord = ({children, delay = 0, duration = 1}) => {
   return (
     <motion.div
       initial={{ opacity: 0, x: -100 }}

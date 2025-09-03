@@ -1,7 +1,7 @@
 import React from 'react'
 import Comeinword from './Comeinword';
 import { useState } from 'react';
-const Contact=()=>{
+const Contact=({ContactRef})=>{
  const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
     const handleSubmit =()=>{
@@ -12,7 +12,7 @@ const Contact=()=>{
            alert("entered sucessfully ")
     }}
   return (
-    <div>
+    <div ref={ContactRef}>
           <h3 className='text-center  text-[30px] my-3'>Contact<span className='text-purple-900'>Me</span></h3>
  
     <Comeinword>
@@ -32,19 +32,19 @@ const Contact=()=>{
       </div>
      </div>
      <div className='flex gap-2'>
-        <h3 className='border-2 border-purple-900 text-purple-900 text-center py-3 text-[20px]   rounded-2xl w-[50px] h-[50px]  '>
+        <h3 className='border-2 border-purple-900 text-purple-900 text-center py-3 text-[20px]   rounded-2xl w-[40px] h-[40px]  '>
             <ion-icon name="logo-facebook"></ion-icon>
         </h3>
         <br />
-        <h3 className='border-2 border-purple-900 text-purple-900 text-center py-3 text-[20px]  rounded-2xl w-[50px] h-[50px]    '>
+        <h3 className='border-2 border-purple-900 text-purple-900 text-center py-3 text-[20px]  rounded-2xl w-[40px] h-[40px]    '>
             <ion-icon name="logo-instagram"></ion-icon>
         </h3>
         <br />
-        <h3 className='border-2 border-purple-900 text-purple-900 text-center py-3 text-[20px]  rounded-2xl w-[50px] h-[50px]   '>
+        <h3 className='border-2 border-purple-900 text-purple-900 text-center py-3 text-[20px]  rounded-2xl w-[40px] h-[40px]   '>
             <ion-icon name="logo-twitter"></ion-icon>
         </h3>
         <br />
-        <h3 className='border-2 border-purple-900 text-center py-3 text-[20px]  text-purple-900 rounded-2xl  w-[50px] h-[50px]  '>
+        <h3 className='border-2 border-purple-900 text-center py-3 text-[20px]  text-purple-900 rounded-2xl  w-[40px] h-[40px]  '>
             <ion-icon name="logo-linkedin"></ion-icon>
         </h3>
      </div>

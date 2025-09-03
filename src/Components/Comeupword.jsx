@@ -8,7 +8,7 @@ const Comeupword = ({duration=2, delay= 0, children}) => {
       whileInView={{opacity:1,y:0}}
       viewport={{once: false, amount: 0.3}}
       transition={{ duration,delay, ease: 'easeOut'}}
-      className="text-center  "
+      className="text-center"
     >
      {children}
     </motion.div>

@@ -7,9 +7,12 @@ import Comeinword from './Comeinword'
 
 
 
-const Lander = ({togglemenu,homeRef,setTogglemenu, skillRef,aboutRef,projectRef,servicesRef}) => {
+const Lander = ({togglemenu,homeRef,setTogglemenu, skillRef,aboutRef,projectRef,servicesRef, ContactRef}) => {
   const scrolltoHome =()=>{
   homeRef.current.scrollIntoView({behavior: "smooth"})
+ }
+  const scrolltoContact =()=>{
+  ContactRef.current.scrollIntoView({behavior: "smooth"})
  }
   const scrolltoService = ()=>{
   servicesRef.current.scrollIntoView({behavior:"smooth"});
@@ -41,7 +44,7 @@ const Lander = ({togglemenu,homeRef,setTogglemenu, skillRef,aboutRef,projectRef,
             <li className='cursor-pointer hover:text-[grey]'>Faq</li>
             <li className='cursor-pointer hover:text-[#b5b5b5]' onClick={scrolltoService}>Services</li>
           </ul>
-          <button className='mt-6 outline-none bg-purple-900 py-2 px-6  w-[120px] hover:w-[130px] hover:h-[42px] h-[40px] rounded-md text-white flex items-center'>
+          <button onClick={scrolltoContact} className='mt-6 outline-none bg-purple-900 py-2 px-6  w-[120px] hover:w-[130px] hover:h-[42px] h-[40px] rounded-md text-white flex items-center'>
             Contact <span className='ml-2'><ion-icon name="arrow-forward-outline"></ion-icon></span>
           </button>
 
@@ -49,7 +52,7 @@ const Lander = ({togglemenu,homeRef,setTogglemenu, skillRef,aboutRef,projectRef,
           
         </div>
       )}
-    <div className=' lg:flex  md:flex grid justify-center lg:mx-5 md:mx-5 mx-10 '>
+    <div className=' lg:flex  md:flex grid justify-center lg:mx-5 md:mx-5 mx-0 '>
       
   <div className='lg:w-1/2 md:w-1/2 w-2/2'>
       <ComeOutWord>
