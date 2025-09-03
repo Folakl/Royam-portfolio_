@@ -32,21 +32,25 @@ const Contact=({ContactRef})=>{
       </div>
      </div>
      <div className='flex gap-2'>
-        <h3 className='border-2 border-purple-900 text-purple-900 text-center py-3 text-[20px]   rounded-2xl w-[40px] h-[40px]  '>
+       <a href="https://www.facebook.com/roimot.yakub" className='border-2 border-purple-900
+         text-purple-900 text-center py-2 text-[20px]   rounded-2xl w-[40px] h-[40px]  '>
             <ion-icon name="logo-facebook"></ion-icon>
-        </h3>
+        </a>
         <br />
-        <h3 className='border-2 border-purple-900 text-purple-900 text-center py-3 text-[20px]  rounded-2xl w-[40px] h-[40px]    '>
+        <a href="https://www.facebook.come/roimot.yakub" className='border-2 border-purple-900
+         text-purple-900 text-center py-2 text-[20px]   rounded-2xl w-[40px] h-[40px]  '>
             <ion-icon name="logo-instagram"></ion-icon>
-        </h3>
+        </a>
         <br />
-        <h3 className='border-2 border-purple-900 text-purple-900 text-center py-3 text-[20px]  rounded-2xl w-[40px] h-[40px]   '>
+       <a href="https://www.facebook.come/roimot.yakub" className='border-2 border-purple-900
+         text-purple-900 text-center py-2 text-[20px]   rounded-2xl w-[40px] h-[40px]  '>
             <ion-icon name="logo-twitter"></ion-icon>
-        </h3>
+        </a>
         <br />
-        <h3 className='border-2 border-purple-900 text-center py-3 text-[20px]  text-purple-900 rounded-2xl  w-[40px] h-[40px]  '>
-            <ion-icon name="logo-linkedin"></ion-icon>
-        </h3>
+        <a href="https://www.facebook.come/roimot.yakub" className='border-2 border-purple-900
+         text-purple-900 text-center py-2 text-[20px]   rounded-2xl w-[40px] h-[40px]  '>
+            <ion-icon name="logo-twitter"></ion-icon>
+        </a>
      </div>
 
     </div>
