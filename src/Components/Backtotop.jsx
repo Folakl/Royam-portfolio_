@@ -3,12 +3,14 @@ import React from 'react'
 
 
 
-const Backtotop = ({TopRef}) => {
+const Backtotop = ({homeRef}) => {
      const scrolltoTop = ()=>{
-  TopRef.current.scrollIntoView({behavior: "smooth" })
+  homeRef.current.scrollIntoView({behavior: "smooth" })
  }
   return (
-    <div className='bg-purple-900 text-center h-[20px] w-full  text-white cursor-pointer text-[15px] font-bold '  onClick={scrolltoTop}>Back to Top</div>
+    <div>
+      <h3 className='bg-purple-900 text-center h-[20px] w-full  text-white cursor-pointer text-[15px] font-bold '  onClick={scrolltoTop}>Back to Top</h3>
+    </div>
   )
 }
 

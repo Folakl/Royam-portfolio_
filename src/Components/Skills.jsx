@@ -10,7 +10,7 @@ const Skills = ({skillRef}) => {
 <div ref={skillRef} className='lg:justify-self-center md:justify-self-center mx-5'>
   <Comeinword>
     <div className='text-[10px]'>
-    <h3 className='font-bold text-center text-[20px] my-2 '>Technical Skills</h3>
+    <h3 className='font-bold text-center text-[20px] my-2 '>Skills</h3>
    <div className='my-2'>
      <div className='flex justify-between'>
       <h3>HTML</h3>

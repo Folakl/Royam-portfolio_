@@ -3,9 +3,11 @@ import Comeinword from './Comeinword';
 import { useState } from 'react';
 const Contact=({ContactRef})=>{
  const [email,setEmail] = useState("");
-    const [password,setPassword] = useState("");
+ const [subject,setSubect] = useState("");
+ const [message,setMessage] = useState("");
+    const [name,setName] = useState("");
     const handleSubmit =()=>{
-        if (email === "" || password === ""){
+        if (email === "" || name === "" || subject=== "" || message === ""){
             alert("enter necessary details")
         }
         else{
@@ -49,19 +51,28 @@ const Contact=({ContactRef})=>{
         <br />
         <a href="https://www.facebook.come/roimot.yakub" className='border-2 border-purple-900
          text-purple-900 text-center py-2 text-[20px]   rounded-2xl w-[40px] h-[40px]  '>
-            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
         </a>
      </div>
 
     </div>
 
     {/* user info section */}
-    <div className='my-5 py-5 text-start px-2 lg:w-[400px] md:w-[400px] w-[350px] mx-2 h-contain border-2 rounded-2xl border-purple-900'>
-        <input type="email" name="email" onChange={(e)=>{setEmail(e.target.value)}} placeholder='enter your email' id="" className=' px-2 w-[300px] my-2 h-[40px] rounded-2xl text-white bg-purple-900' />
-        <br />
-        <input type="password" name="password" id="" placeholder='enter your password' onChange={(e)=>{setPassword(e.target.value)}} className='px-2 my-2 w-[300px] h-[40px] rounded-2xl text-white bg-purple-900' />
-            <br />
-        <button className='bg-white text-black w-[120px] h-[40px] rounded-2xl border-2 border-black my-10 mx-20' onClick={handleSubmit}>Submit</button>
+    <div className='my-5 py-2 text-start px-2 lg:w-[400px] md:w-[400px] w-[350px] mx-2 h-contain border-2 rounded-2xl border-purple-900'>
+         <h3>Name</h3>
+        <input type="text" name="email" onChange={(e)=>{setEmail(e.target.value)}} placeholder='Enter your email' id="" className=' px-2 w-[300px] my-2 outline-none  h-[40px] rounded-2xl text-white bg-purple-900' />
+       
+        <h3 >Email</h3>
+        <input type="email" name="email" onChange={(e)=>{setEmail(e.target.value)}} placeholder='Enter your email' id="" className=' px-2 w-[300px] my-2 outline-none  h-[40px] rounded-2xl text-white bg-purple-900' />
+        
+        <h3>Enter your  Subject</h3>
+       <input type="text" onChange={(e)=>{setSubect(e.target.value)}} className='w-full h-[40px] rounded-2xl  bg-purple-900 px-2 outline-none my-2 ' name='subject' placeholder='Enter your Subject' />
+        
+        <h3>Enter your  Message</h3>
+     <textarea onChange={(e)=>{setMessage(e.target.value)}}  className='w-full h-contain rounded-2xl  bg-purple-900  px-2 outline-none my-2 ' name='message' placeholder='Enter your message'>
+
+     </textarea>
+        <button className='bg-white text-black w-[120px] h-[40px] rounded-2xl border-2 border-black my-2 mx-20 outline-none' onClick={handleSubmit}>Submit</button>
     </div>
 
 

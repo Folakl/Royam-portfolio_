@@ -10,16 +10,13 @@ const About = ({ aboutRef }) => {
 
       <div className="lg:flex md:flex grid justify-between items-center gap-[120px]  ">
         {/* Profile with Glow */}
-        <div className=" lg:grid md:grid hidden  relative">
-          {/* Glow wrapper */}
-          <div className="absolute inset-0 top-10 flex items-center justify-center">
-            <div className="w-[350px] h-[350px] rounded-full bg-[radial-gradient(circle_at_center,_#1e3a8a,_#2563eb,_#38bdf8,_#60a5fa)] blur-3xl opacity-70"></div>
-          </div>
+        <div className=" lg:grid md:grid hidden  ">
+        
 
           {/* Profile Image */}
           <img
             src={profile}
-            className="relative rounded-full top-10 w-[300px] h-[300px] z-10"
+            className="rounded-full top-10 w-[300px] h-[300px] "
             alt="profile"
           />
         </div>
@@ -27,7 +24,7 @@ const About = ({ aboutRef }) => {
         {/* About Text */}
         <div className="flex-1 ">
           <h3 className="font-bold text-[30px] text-start mb-5 ">Front End Developer</h3>
-          <h3 className="text-[15px] text-start  leading-relaxed animate-pulse">
+          <h3 className="text-[15px] text-start  leading-relaxed animate-pulse z-0">
             Hi there! I’m a front-end developer passionate about creating clean,
             responsive, and user-friendly web experiences. I enjoy turning ideas
             into reality using HTML, CSS, JavaScript, React, and Tailwind CSS.

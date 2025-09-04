@@ -16,19 +16,24 @@ const Home = () => {
     const projectRef = useRef(null);
     const homeRef = useRef(null);
     const servicesRef = useRef(null);
-    const TopRef = useRef(null);
     const ContactRef = useRef(null);
+
+
+
+ 
   return (
-    <div className='bg-black   text-white '>
+    <div className='bg-black  w-full text-white'>
+      
     
-      <Navbar togglemenu={togglemenu} ContactRef={ContactRef} TopRef={TopRef} setTogglemenu={setTogglemenu} homeRef={homeRef} servicesRef={servicesRef} skillRef={skillRef} aboutRef={aboutRef} projectRef={projectRef}/>
-      <Lander togglemenu={togglemenu} ContactRef={ContactRef} skillRef={skillRef} homeRef={homeRef} aboutRef={aboutRef} projectRef={projectRef} setTogglemenu={setTogglemenu}/>
+      <Navbar togglemenu={togglemenu} ContactRef={ContactRef} setTogglemenu={setTogglemenu} homeRef={homeRef} servicesRef={servicesRef} skillRef={skillRef} aboutRef={aboutRef} projectRef={projectRef}/>
+       
+      <Lander togglemenu={togglemenu} homeRef={homeRef}/>
       <About aboutRef={aboutRef}/>
       <Skills skillRef={skillRef}/>
       <Service servicesRef={servicesRef}/>
       <Portfolio projectRef={projectRef}/>
       <Contact ContactRef={ContactRef}/>
-      <Backtotop TopRef={TopRef}/>
+      <Backtotop homeRef={homeRef}/>
     </div>
   )
 }

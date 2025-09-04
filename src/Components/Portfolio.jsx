@@ -17,7 +17,7 @@ const Portfolio = ({projectRef}) => {
                <h3 className='font-bold py-2'>{project.name}</h3>
              <h3 className='font-bold my-2 '> TechStack: <span className='font-normal'>{project.techStack}</span></h3>
              <h3 className='font-bold'>Features: <span className='font-normal'>{project.features}</span></h3>
-             <h3 className='font-bold'>Live demo: <a href="">{project.livedemo}</a></h3>
+             <h3 className='font-bold '>Live demo: <a href="" className='text-purple-900'>{project.livedemo}</a></h3>
             </div>
          
              
